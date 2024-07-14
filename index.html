@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			/* Ensure that the mobile menu is hidden by default */
+			#mobile-menu {
+				display: none;
+			}
+		</style>
+		<title>Car garage</title>
+	</head>
+	<body>
+		<nav class="bg-white shadow-md">
+			<div class="max-w-5xl px-2 mx-auto sm:px-6 lg:px-8">
+				<div class="relative flex items-center justify-between h-16">
+					<div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+						<!-- Mobile menu button-->
+						<button
+							id="menu-button"
+							class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+						>
+							<span class="sr-only">Open main menu</span>
+							<svg
+								id="menu-icon"
+								class="block w-6 h-6"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								aria-hidden="true"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M4 6h16M4 12h16m-7 6h7"
+								/>
+							</svg>
+							<svg
+								id="close-icon"
+								class="hidden w-6 h-6"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								aria-hidden="true"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</button>
+					</div>
+					<div class="flex items-center justify-center flex-1 sm:justify-start">
+						<div class="flex-shrink-0 ml-auto md:m-0">
+							<h1 class="text-xl font-bold">CAR Garage</h1>
+						</div>
+						<div class="hidden !mx-auto sm:block sm:ml-6">
+							<div class="flex space-x-4">
+								<a
+									href="/index.html"
+									class="px-3 py-2 text-sm font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+									>Home</a
+								>
+								<a
+									href="/about.html"
+									class="px-3 py-2 text-sm font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+									>About</a
+								>
+								<a
+									href="/services.html"
+									class="px-3 py-2 text-sm font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+									>Services</a
+								>
+								<a
+									href="/"
+									class="px-3 py-2 text-sm font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+									>Blog</a
+								>
+								<a
+									href="contact.html"
+									class="px-3 py-2 text-sm font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+									>Contact</a
+								>
+							</div>
+						</div>
+					</div>
+					<div
+						class="absolute inset-y-0 right-0 items-center hidden pr-2 md:flex sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+					>
+						<button
+							class="px-4 py-2 font-bold text-white bg-orange-500 rounded hover:bg-orange-700"
+						>
+							Call to Action
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Mobile menu, show/hide based on menu state. -->
+			<div class="sm:hidden" id="mobile-menu">
+				<div class="px-2 pt-2 pb-3 space-y-1">
+					<a
+						href="/index.html"
+						class="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+						>Home</a
+					>
+					<a
+						href="/about.html"
+						class="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+						>About</a
+					>
+					<a
+						href="/services.html"
+						class="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+						>Services</a
+					>
+					<a
+						href="/"
+						class="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+						>Blog</a
+					>
+					<a
+						href="/contact.html"
+						class="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+						>Contact</a
+					>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Main -->
+		<main>
+			<!-- Header -->
+			<div
+				class="relative w-full p-8 min-h-[90vh] flex justify-center items-center bg-center bg-no-repeat bg-cover"
+				style="
+					background-image: url('https://car-wash.ziptemplates.top/wp-content/uploads/2023/09/hero.jpg');
+				"
+			>
+				<div class="absolute inset-0 bg-black opacity-70"></div>
+				<div class="relative z-10 max-w-2xl text-center text-white">
+					<p class="mb-4 text-3xl font-bold md:text-4xl">
+						WE WILL WRITE A HEADLINE HIGHLIGHTING YOUR BUSINESS
+					</p>
+					<p class="mb-6 text-base md:text-lg">
+						We will write a persuasive introduction for you or your company.
+						This can be about your products, offerings, or simply why you exist.
+					</p>
+					<a
+						href="#"
+						class="inline-block px-6 py-3 font-bold text-white bg-orange-500 rounded-lg hover:bg-orange-600"
+						>CALL TO ACTION</a
+					>
+				</div>
+			</div>
+
+			<!-- Benefit-->
+			<div class="max-w-5xl py-16 mx-auto">
+				<div class="grid grid-cols-1 gap-8 text-center md:grid-cols-3">
+					<div>
+						<div class="mb-2 text-2xl font-semibold text-orange-500">01</div>
+						<div class="mb-4 text-xl font-bold">BENEFIT 1</div>
+						<p class="text-gray-600">
+							In this part, we will write about the benefits users derive from
+							choosing your company product or services.
+						</p>
+					</div>
+					<div>
+						<div class="mb-2 text-2xl font-semibold text-orange-500">02</div>
+						<div class="mb-4 text-xl font-bold">BENEFIT 2</div>
+						<p class="text-gray-600">
+							In this part, we will write about the benefits users derive from
+							choosing your company product or services.
+						</p>
+					</div>
+					<div>
+						<div class="mb-2 text-2xl font-semibold text-orange-500">03</div>
+						<div class="mb-4 text-xl font-bold">BENEFIT 3</div>
+						<p class="text-gray-600">
+							In this part, we will write about the benefits users derive from
+							choosing your company product or services.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Services -->
+			<div class="container max-w-5xl px-4 py-12 mx-auto">
+				<h1 class="mb-8 text-3xl font-bold text-center">
+					HEADLINE DESCRIBING SERVICES YOU OFFER WILL BE HERE
+				</h1>
+
+				<div class="grid gap-6 md:grid-cols-3">
+					<!-- Service 1 -->
+					<div class="overflow-hidden bg-white rounded-lg shadow-md">
+						<img
+							src="https://car-wash.websitedemos.top/wp-content/uploads/2023/09/services-01.jpg"
+							alt="Service 1"
+							class="object-cover w-full h-48"
+						/>
+						<div class="p-6">
+							<h2 class="mb-2 text-xl font-bold">SERVICE 1</h2>
+							<p class="mb-4 text-gray-700">
+								This section will highlight specific details about a service
+								that you offer. We will write about what this service is and how
+								your company uses it to help users achieve their desired goals.
+							</p>
+							<a href="#" class="text-orange-600 hover:underline">READ MORE</a>
+						</div>
+					</div>
+
+					<!-- Service 2 -->
+					<div class="overflow-hidden bg-white rounded-lg shadow-md">
+						<img
+							src="https://car-wash.websitedemos.top/wp-content/uploads/2023/09/services-02.jpg"
+							alt="Service 2"
+							class="object-cover w-full h-48"
+						/>
+						<div class="p-6">
+							<h2 class="mb-2 text-xl font-bold">SERVICE 2</h2>
+							<p class="mb-4 text-gray-700">
+								This section will highlight specific details about a service
+								that you offer. We will write about what this service is and how
+								your company uses it to help users achieve their desired goals.
+							</p>
+							<a href="#" class="text-orange-600 hover:underline">READ MORE</a>
+						</div>
+					</div>
+
+					<!-- Service 3 -->
+					<div class="overflow-hidden bg-white rounded-lg shadow-md">
+						<img
+							src="https://car-wash.websitedemos.top/wp-content/uploads/2023/09/services-03.jpg"
+							alt="Service 3"
+							class="object-cover w-full h-48"
+						/>
+						<div class="p-6">
+							<h2 class="mb-2 text-xl font-bold">SERVICE 3</h2>
+							<p class="mb-4 text-gray-700">
+								This section will highlight specific details about a service
+								that you offer. We will write about what this service is and how
+								your company uses it to help users achieve their desired goals.
+							</p>
+							<a href="#" class="text-orange-600 hover:underline">READ MORE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- About Us -->
+			<section
+				class="container flex flex-col items-center max-w-5xl p-6 mx-auto md:flex-row"
+			>
+				<div class="w-full md:w-1/2">
+					<img
+						src="https://car-wash.websitedemos.top/wp-content/uploads/2023/09/about.jpg"
+						alt="About Us Image"
+						class="rounded-lg shadow-lg w-[560px] h-[500px] object-cover"
+					/>
+				</div>
+				<div class="w-full mt-8 md:w-1/2 md:pl-8 md:mt-0">
+					<h2 class="mb-4 text-3xl font-bold">
+						Headline for the About Us Section Will Be Here
+					</h2>
+					<p class="mb-6 text-gray-700">
+						In this part, we will introduce you or your business to website
+						visitors. We'll write about you, your organization, the products or
+						services you offer, and why your company exists.
+					</p>
+					<div class="flex items-center mb-4">
+						<div class="mr-4 text-4xl font-bold text-gray-900">30+</div>
+						<div class="text-lg text-gray-700">Year of Experience</div>
+					</div>
+					<div class="flex items-center mb-6">
+						<div class="mr-4 text-4xl font-bold text-gray-900">1000+</div>
+						<div class="text-lg text-gray-700">Happy Customers</div>
+					</div>
+					<a
+						href="#"
+						class="px-6 py-3 text-white bg-orange-500 rounded-lg shadow-lg hover:bg-orange-600"
+						>Read More</a
+					>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<div
+				class="relative w-full p-8 min-h-[50vh] flex justify-center items-center bg-center bg-no-repeat bg-cover"
+				style="
+					background-image: url('https://car-wash.websitedemos.top/wp-content/uploads/2023/09/quote-cta.jpg');
+				"
+			>
+				<div class="absolute inset-0 bg-black opacity-70"></div>
+				<div
+					class="relative z-10 flex flex-col items-center justify-between w-11/12 mx-auto text-center text-white lg:flex-row"
+				>
+					<div class="max-w-2xl text-center lg:text-left">
+						<p class="mb-4 text-3xl font-bold md:text-4xl">
+							HEADING FOR THE MIDDLE CALL TO ACTION WILL BE HERE
+						</p>
+						<p class="mb-6 text-base md:text-lg">
+							Subheading for the middle call to action will be here
+						</p>
+					</div>
+					<div>
+						<a
+							href="#"
+							class="inline-block px-6 py-3 font-bold text-white bg-orange-500 rounded-lg hover:bg-orange-600"
+							>CALL TO ACTION</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<!-- Testimonial -->
+			<section class="py-12">
+				<div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+					<h2
+						class="text-3xl font-extrabold text-center text-gray-900 sm:text-4xl"
+					>
+						HEADING FOR THE TESTIMONIALS SECTION WILL BE HERE
+					</h2>
+					<p class="mt-4 text-lg leading-6 text-center text-gray-600">
+						In this section, we will write a sub-heading for the testimonials
+						section
+					</p>
+					<div
+						class="grid grid-cols-1 gap-8 mt-10 sm:grid-cols-2 lg:grid-cols-3"
+					>
+						<div class="p-6 bg-white rounded-lg shadow">
+							<div class="flex items-center">
+								<div class="flex-shrink-0">
+									<img
+										class="w-12 h-12 rounded-full"
+										src="https://car-wash.websitedemos.top/wp-content/uploads/2023/09/skip-client-03.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="ml-4">
+									<div class="text-lg font-medium text-gray-900">
+										Testimonial Author Name
+									</div>
+									<div class="flex mt-1 space-x-1">
+										<svg
+											class="w-5 h-5 text-yellow-500"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.282a1 1 0 00.95.69h5.586c.967 0 1.372 1.24.588 1.81l-4.522 3.28a1 1 0 00-.364 1.118l1.714 5.282c.3.921-.755 1.688-1.54 1.118l-4.523-3.28a1 1 0 00-1.176 0l-4.522 3.28c-.785.57-1.84-.197-1.54-1.118l1.715-5.282a1 1 0 00-.364-1.118l-4.522-3.28c-.785-.57-.38-1.81.588-1.81h5.586a1 1 0 00.95-.69l1.715-5.282z"
+											></path>
+										</svg>
+										<svg
+											class="w-5 h-5 text-yellow-500"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.282a1 1 0 00.95.69h5.586c.967 0 1.372 1.24.588 1.81l-4.522 3.28a1 1 0 00-.364 1.118l1.714 5.282c.3.921-.755 1.688-1.54 1.118l-4.523-3.28a1 1 0 00-1.176 0l-4.522 3.28c-.785.57-1.84-.197-1.54-1.118l1.715-5.282a1 1 0 00-.364-1.118l-4.522-3.28c-.785-.57-.38-1.81.588-1.81h5.586a1 1 0 00.95-.69l1.715-5.282z"
+											></path>
+										</svg>
+										<svg
+											class="w-5 h-5 text-yellow-500"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.282a1 1 0 00.95.69h5.586c.967 0 1.372 1.24.588 1.81l-4.522 3.28a1 1 0 00-.364 1.118l1.714 5.282c.3.921-.755 1.688-1.54 1.118l-4.523-3.28a1 1 0 00-1.176 0l-4.522 3.28c-.785.57-1.84-.197-1.54-1.118l1.715-5.282a1 1 0 00-.364-1.118l-4.522-3.28c-.785-.57-.38-1.81.588-1.81h5.586a1 1 0 00.95-.69l1.715-5.282z"
+											></path>
+										</svg>
+										<svg
+											class="w-5 h-5 text-yellow-500"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.282a1 1 0 00.95.69h5.586c.967 0 1.372 1.24.588 1.81l-4.522 3.28a1 1 0 00-.364 1.118l1.714 5.282c.3.921-.755 1.688-1.54 1.118l-4.523-3.28a1 1 0 00-1.176 0l-4.522 3.28c-.785.57-1.84-.197-1.54-1.118l1.715-5.282a1 1 0 00-.364-1.118l-4.522-3.28c-.785-.57-.38-1.81.588-1.81h5.586a1 1 0 00.95-.69l1.715-5.282z"
+											></path>
+										</svg>
+										<svg
+											class="w-5 h-5 text-yellow-500"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.282a1 1 0 00.95.69h5.586c.967 0 1.372 1.24.588 1.81l-4.522 3.28a1 1 0 00-.364 1.118l1.714 5.282c.3.921-.755 1.688-1.54 1.118l-4.523-3.28a1 1 0 00-1.176 0l-4.522 3.28c-.785.57-1.84-.197-1.54-1.118l1.715-5.282a1 1 0 00-.364-1.118l-4.522-3.28c-.785-.57-.38-1.81.588-1.81h5.586a1 1 0 00.95-.69l1.715-5.282z"
+											></path>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<blockquote class="mt-4">
+								<p class="text-lg leading-6 text-gray-600">
+									"We will write a testimonial from a satisfied customer. You
+									can replace this with actual testimonials from your clients.
+									Testimonials are a great way to inspire potential customers to
+									trust you."
+								</p>
+							</blockquote>
+						</div>
+
+						<div class="p-6 bg-white rounded-lg shadow">
+							<div class="flex items-center">
+								<div class="flex-shrink-0">
+									<img
+										class="w-12 h-12 rounded-full"
+										src="https://car-wash.websitedemos.top/wp-content/uploads/2023/09/skip-client-01.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="ml-4">
+									<div class="text-lg font-medium text-gray-900">
+										Testimonial Author Name
+									</div>
+									<div class="flex mt-1 space-x-1">
+										<svg
+											class="w-5 h-5 text-yellow-500"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.282a1 1 0 00.95.69h5.586c.967 0 1.372 1.24.588 1.81l-4.522 3.28a1 1 0 00-.364 1.118l1.714 5.282c.3.921-.755 1.688-1.54 1.118l-4.523-3.28a1 1 0 00-1.176 0l-4.522 3.28c-.785.57-1.84-.197-1.54-1.118l1.715-5.282a1 1 0 00-.364-1.118l-4.522-3.28c-.785-.57-.38-1.81.588-1.81h5.586a1 1 0 00.95-.69l1.715-5.282z"
+											></path>
+										</svg>
+										<svg
+											class="w-5 h-5 text-yellow-500"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.282a1 1 0 00.95.69h5.586c.967 0 1.372 1.24.588 1.81l-4.522 3.28a1 1 0 00-.364 1.118l1.714 5.282c.3.921-.755 1.688-1.54 1.118l-4.523-3.28a1 1 0 00-1.176 0l-4.522 3.28c-.785.57-1.84-.197-1.54-1.118l1.715-5.282a1 1 0 00-.364-1.118l-4.522-3.28c-.785-.57-.38-1.81.588-1.81h5.586a1 1 0 00.95-.69l1.715-5.282z"
+											></path>
+										</svg>
+										<svg
+											class="w-5 h-5 text-yellow-500"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.282a1 1 0 00.95.69h5.586c.967 0 1.372 1.24.588 1.81l-4.522 3.28a1 1 0 00-.364 1.118l1.714 5.282c.3.921-.755 1.688-1.54 1.118l-4.523-3.28a1 1 0 00-1.176 0l-4.522 3.28c-.785.57-1.84-.197-1.54-1.118l1.715-5.282a1 1 0 00-.364-1.118l-4.522-3.28c-.785-.57-.38-1.81.588-1.81h5.586a1 1 0 00.95-.69l1.715-5.282z"
+											></path>
+										</svg>
+										<svg
+											class="w-5 h-5 text-yellow-500"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.282a1 1 0 00.95.69h5.586c.967 0 1.372 1.24.588 1.81l-4.522 3.28a1 1 0 00-.364 1.118l1.714 5.282c.3.921-.755 1.688-1.54 1.118l-4.523-3.28a1 1 0 00-1.176 0l-4.522 3.28c-.785.57-1.84-.197-1.54-1.118l1.715-5.282a1 1 0 00-.364-1.118l-4.522-3.28c-.785-.57-.38-1.81.588-1.81h5.586a1 1 0 00.95-.69l1.715-5.282z"
+											></path>
+										</svg>
+										<svg
+											class="w-5 h-5 text-yellow-500"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.282a1 1 0 00.95.69h5.586c.967 0 1.372 1.24.588 1.81l-4.522 3.28a1 1 0 00-.364 1.118l1.714 5.282c.3.921-.755 1.688-1.54 1.118l-4.523-3.28a1 1 0 00-1.176 0l-4.522 3.28c-.785.57-1.84-.197-1.54-1.118l1.715-5.282a1 1 0 00-.364-1.118l-4.522-3.28c-.785-.57-.38-1.81.588-1.81h5.586a1 1 0 00.95-.69l1.715-5.282z"
+											></path>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<blockquote class="mt-4">
+								<p class="text-lg leading-6 text-gray-600">
+									"We will write a testimonial from a satisfied customer. You
+									can replace this with actual testimonials from your clients.
+									Testimonials are a great way to inspire potential customers to
+									trust you."
+								</p>
+							</blockquote>
+						</div>
+
+						<div class="p-6 bg-white rounded-lg shadow">
+							<div class="flex items-center">
+								<div class="flex-shrink-0">
+									<img
+										class="w-12 h-12 rounded-full"
+										src="https://car-wash.websitedemos.top/wp-content/uploads/2023/09/skip-client-02.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="ml-4">
+									<div class="text-lg font-medium text-gray-900">
+										Testimonial Author Name
+									</div>
+									<div class="flex mt-1 space-x-1">
+										<svg
+											class="w-5 h-5 text-yellow-500"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.282a1 1 0 00.95.69h5.586c.967 0 1.372 1.24.588 1.81l-4.522 3.28a1 1 0 00-.364 1.118l1.714 5.282c.3.921-.755 1.688-1.54 1.118l-4.523-3.28a1 1 0 00-1.176 0l-4.522 3.28c-.785.57-1.84-.197-1.54-1.118l1.715-5.282a1 1 0 00-.364-1.118l-4.522-3.28c-.785-.57-.38-1.81.588-1.81h5.586a1 1 0 00.95-.69l1.715-5.282z"
+											></path>
+										</svg>
+										<svg
+											class="w-5 h-5 text-yellow-500"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.282a1 1 0 00.95.69h5.586c.967 0 1.372 1.24.588 1.81l-4.522 3.28a1 1 0 00-.364 1.118l1.714 5.282c.3.921-.755 1.688-1.54 1.118l-4.523-3.28a1 1 0 00-1.176 0l-4.522 3.28c-.785.57-1.84-.197-1.54-1.118l1.715-5.282a1 1 0 00-.364-1.118l-4.522-3.28c-.785-.57-.38-1.81.588-1.81h5.586a1 1 0 00.95-.69l1.715-5.282z"
+											></path>
+										</svg>
+										<svg
+											class="w-5 h-5 text-yellow-500"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.282a1 1 0 00.95.69h5.586c.967 0 1.372 1.24.588 1.81l-4.522 3.28a1 1 0 00-.364 1.118l1.714 5.282c.3.921-.755 1.688-1.54 1.118l-4.523-3.28a1 1 0 00-1.176 0l-4.522 3.28c-.785.57-1.84-.197-1.54-1.118l1.715-5.282a1 1 0 00-.364-1.118l-4.522-3.28c-.785-.57-.38-1.81.588-1.81h5.586a1 1 0 00.95-.69l1.715-5.282z"
+											></path>
+										</svg>
+										<svg
+											class="w-5 h-5 text-yellow-500"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.282a1 1 0 00.95.69h5.586c.967 0 1.372 1.24.588 1.81l-4.522 3.28a1 1 0 00-.364 1.118l1.714 5.282c.3.921-.755 1.688-1.54 1.118l-4.523-3.28a1 1 0 00-1.176 0l-4.522 3.28c-.785.57-1.84-.197-1.54-1.118l1.715-5.282a1 1 0 00-.364-1.118l-4.522-3.28c-.785-.57-.38-1.81.588-1.81h5.586a1 1 0 00.95-.69l1.715-5.282z"
+											></path>
+										</svg>
+										<svg
+											class="w-5 h-5 text-yellow-500"
+											fill="currentColor"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.715 5.282a1 1 0 00.95.69h5.586c.967 0 1.372 1.24.588 1.81l-4.522 3.28a1 1 0 00-.364 1.118l1.714 5.282c.3.921-.755 1.688-1.54 1.118l-4.523-3.28a1 1 0 00-1.176 0l-4.522 3.28c-.785.57-1.84-.197-1.54-1.118l1.715-5.282a1 1 0 00-.364-1.118l-4.522-3.28c-.785-.57-.38-1.81.588-1.81h5.586a1 1 0 00.95-.69l1.715-5.282z"
+											></path>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<blockquote class="mt-4">
+								<p class="text-lg leading-6 text-gray-600">
+									"We will write a testimonial from a satisfied customer. You
+									can replace this with actual testimonials from your clients.
+									Testimonials are a great way to inspire potential customers to
+									trust you."
+								</p>
+							</blockquote>
+						</div>
+						<!-- Repeat the above div block for additional testimonials -->
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<div
+				class="relative w-full p-8 min-h-[90vh] flex justify-center items-center bg-center bg-no-repeat bg-cover"
+				style="
+					background-image: url('https://car-wash.websitedemos.top/wp-content/uploads/2023/09/footer-cta.jpg');
+				"
+			>
+				<div class="absolute inset-0 bg-black opacity-70"></div>
+				<div class="relative z-10 max-w-2xl text-center text-white">
+					<p class="mb-4 text-3xl font-bold md:text-4xl">
+						We Will Write A Convincing Call To Action To Engage Your Audience
+						Here
+					</p>
+					<p class="mb-6 text-base md:text-lg">
+						We Will Write A Convincing Call To Action To Engage Your Audience
+						Here
+					</p>
+					<a
+						href="#"
+						class="inline-block px-6 py-3 font-bold text-white bg-orange-500 rounded-lg hover:bg-orange-600"
+						>CALL TO ACTION</a
+					>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer class="flex items-center justify-center p-6 text-center">
+			<p>Copyright © 2024 Car Garage</p>
+		</footer>
+
+		<!-- JS -->
+		<script src="/script.js"></script>
+	</body>
+</html>

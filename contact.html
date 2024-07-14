@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<style>
+			/* Ensure that the mobile menu is hidden by default */
+			#mobile-menu {
+				display: none;
+			}
+		</style>
+		<title>Car garage</title>
+	</head>
+	<body>
+		<nav class="bg-white shadow-md">
+			<div class="max-w-5xl px-2 mx-auto sm:px-6 lg:px-8">
+				<div class="relative flex items-center justify-between h-16">
+					<div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+						<!-- Mobile menu button-->
+						<button
+							id="menu-button"
+							class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+						>
+							<span class="sr-only">Open main menu</span>
+							<svg
+								id="menu-icon"
+								class="block w-6 h-6"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								aria-hidden="true"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M4 6h16M4 12h16m-7 6h7"
+								/>
+							</svg>
+							<svg
+								id="close-icon"
+								class="hidden w-6 h-6"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								aria-hidden="true"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</button>
+					</div>
+					<div class="flex items-center justify-center flex-1 sm:justify-start">
+						<div class="flex-shrink-0 ml-auto md:m-0">
+							<h1 class="text-xl font-bold">CAR Garage</h1>
+						</div>
+						<div class="hidden !mx-auto sm:block sm:ml-6">
+							<div class="flex space-x-4">
+								<a
+									href="/index.html"
+									class="px-3 py-2 text-sm font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+									>Home</a
+								>
+								<a
+									href="/about.html"
+									class="px-3 py-2 text-sm font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+									>About</a
+								>
+								<a
+									href="/services.html"
+									class="px-3 py-2 text-sm font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+									>Services</a
+								>
+								<a
+									href="/"
+									class="px-3 py-2 text-sm font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+									>Blog</a
+								>
+								<a
+									href="contact.html"
+									class="px-3 py-2 text-sm font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+									>Contact</a
+								>
+							</div>
+						</div>
+					</div>
+					<div
+						class="absolute inset-y-0 right-0 items-center hidden pr-2 md:flex sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+					>
+						<button
+							class="px-4 py-2 font-bold text-white bg-orange-500 rounded hover:bg-orange-700"
+						>
+							Call to Action
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Mobile menu, show/hide based on menu state. -->
+			<div class="sm:hidden" id="mobile-menu">
+				<div class="px-2 pt-2 pb-3 space-y-1">
+					<a
+						href="/index.html"
+						class="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+						>Home</a
+					>
+					<a
+						href="/about.html"
+						class="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+						>About</a
+					>
+					<a
+						href="/services.html"
+						class="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+						>Services</a
+					>
+					<a
+						href="/"
+						class="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+						>Blog</a
+					>
+					<a
+						href="/contact.html"
+						class="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-700 hover:text-white"
+						>Contact</a
+					>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<!-- Header -->
+			<div
+				class="relative w-full p-8 min-h-[50vh] flex justify-center items-center bg-center bg-no-repeat bg-cover"
+				style="
+					background-image: url('https://car-wash.websitedemos.top/wp-content/uploads/2023/09/contact-bg.jpg');
+				"
+			>
+				<div class="absolute inset-0 bg-black opacity-70"></div>
+				<div class="relative z-10 max-w-2xl text-center text-white">
+					<p class="mb-4 text-3xl font-bold md:text-4xl">
+						HEADING FOR THE ABOUT PAGE WILL BE PAGE
+					</p>
+					<p class="mb-6 text-base md:text-lg">
+						We will write a subheading for the about page.
+					</p>
+				</div>
+			</div>
+
+			<!-- Contact form -->
+
+			<section class="container max-w-5xl px-8 py-16 mx-auto">
+				<div class="grid gap-6 md:grid-cols-2">
+					<!-- Contact Information -->
+					<div>
+						<h1 class="mb-4 text-3xl font-bold">
+							Heading for the Contact Us Section Will Be Here
+						</h1>
+						<p class="mb-6 text-lg">
+							We will write a sub-headline for the contact us section here
+						</p>
+						<ul class="space-y-4">
+							<li class="flex items-center">
+								<svg
+									class="w-6 h-6 mr-2 text-orange-500"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20"
+								>
+									<path
+										d="M2.003 5.884l8 4.8a1 1 0 0 0 .994 0l8-4.8A1 1 0 0 0 18 4.981v-1a1 1 0 0 0-.517-.874l-8-4.8a1 1 0 0 0-.966 0l-8 4.8A1 1 0 0 0 2 3.98v1a1 1 0 0 0 .003.904zM2 8.69V15.5A2.5 2.5 0 0 0 4.5 18h11a2.5 2.5 0 0 0 2.5-2.5V8.69l-8 4.8-8-4.8z"
+									/>
+								</svg>
+								<a href="mailto:contact@example.com" class="text-lg"
+									>contact@example.com</a
+								>
+							</li>
+							<li class="flex items-center">
+								<svg
+									class="w-6 h-6 mr-2 text-orange-500"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20"
+								>
+									<path
+										d="M3 2.5A1.5 1.5 0 0 0 1.5 4v12A1.5 1.5 0 0 0 3 17.5h14a1.5 1.5 0 0 0 1.5-1.5V4A1.5 1.5 0 0 0 17 2.5H3zm9 4.118c.01 0 .02 0 .031.001a1 1 0 0 1 .959.819l1 5a1 1 0 0 1-.959 1.18H6.969a1 1 0 0 1-.959-1.18l1-5a1 1 0 0 1 .959-.819h5z"
+									/>
+								</svg>
+								<a href="tel:202-555-0188" class="text-lg">202-555-0188</a>
+							</li>
+							<li class="flex items-center">
+								<svg
+									class="w-6 h-6 mr-2 text-orange-500"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20"
+								>
+									<path
+										d="M10 2C5.582 2 2 5.582 2 10s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 2c.516 0 1.033.068 1.53.203a1 1 0 0 1 .578 1.578L10 8.707 6.707 5.414A6.978 6.978 0 0 1 10 4zm2 2.12A6.978 6.978 0 0 1 16 10c0 1.757-.632 3.372-1.707 4.593L10 10.707 12 8.707V6.12zM4.12 10c0-1.883.73-3.629 2.022-4.953L10 9.293l2 2V10l4.88 4.88c-.57.349-1.172.619-1.8.8l-.1.1-1.479-.985-2.588 2.586L4.12 10z"
+									/>
+								</svg>
+								<span class="text-lg"
+									>2360 Hood Avenue, San Diego, CA, 92123</span
+								>
+							</li>
+						</ul>
+						<div class="mt-6">
+							<h2 class="mb-2 text-lg font-bold">Follow Us</h2>
+							<div class="flex space-x-4">
+								<a href="#" class="text-gray-800">
+									<svg
+										class="w-6 h-6"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+									>
+										<path
+											d="M22.675 0H1.326C.595 0 0 .594 0 1.326v21.348C0 23.406.595 24 1.326 24h11.495v-9.294H9.691v-3.622h3.13v-2.672c0-3.1 1.893-4.789 4.657-4.789 1.325 0 2.463.098 2.797.142v3.241l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.314h3.587l-.468 3.622h-3.12V24h6.116c.73 0 1.325-.595 1.325-1.326V1.326C24 .594 23.405 0 22.675 0z"
+										/>
+									</svg>
+								</a>
+								<a href="#" class="text-gray-800">
+									<svg
+										class="w-6 h-6"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+									>
+										<path
+											d="M23.954 4.569c-.885.389-1.832.654-2.825.775a4.92 4.92 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.907 4.907 0 0 0-8.377 4.474C7.691 8.095 4.066 6.13 1.64 3.161a4.908 4.908 0 0 0-.664 2.475c0 1.71.87 3.215 2.188 4.099a4.904 4.904 0 0 1-2.224-.616v.061c0 2.386 1.697 4.376 3.946 4.828a4.936 4.936 0 0 1-2.212.085c.624 1.951 2.444 3.374 4.604 3.413A9.867 9.867 0 0 1 0 19.54a13.901 13.901 0 0 0 7.548 2.209c9.057 0 14.01-7.506 14.01-14.008 0-.213 0-.426-.016-.637A10.025 10.025 0 0 0 24 4.59z"
+										/>
+									</svg>
+								</a>
+								<a href="#" class="text-gray-800">
+									<svg
+										class="w-6 h-6"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+									>
+										<path
+											d="M12.004 2C6.486 2 2 6.486 2 12.004 2 16.6 5.086 20.4 9.396 21.477c.686.12.948-.299.948-.666 0-.328-.012-1.197-.018-2.35-3.838.83-4.648-1.852-4.648-1.852-.623-1.58-1.52-2.002-1.52-2.002-1.24-.845.095-.828.095-.828 1.372.1 2.094 1.41 2.094 1.41 1.218 2.088 3.197 1.486 3.976 1.137.122-.882.478-1.485.87-1.826-3.065-.349-6.28-1.533-6.28-6.826 0-1.508.538-2.742 1.42-3.709-.144-.348-.618-1.758.134-3.663 0 0 1.163-.373 3.812 1.415 1.106-.307 2.29-.46 3.467-.466 1.175.006 2.362.159 3.468.466 2.646-1.789 3.807-1.415 3.807-1.415.756 1.905.282 3.315.14 3.663.885.967 1.42 2.201 1.42 3.709 0 5.309-3.221 6.473-6.292 6.816.492.424.926 1.258.926 2.539 0 1.834-.016 3.317-.016 3.774 0 .37.258.792.954.66C18.917 20.398 22 16.599 22 12.004 22 6.486 17.518 2 12.004 2z"
+										/>
+									</svg>
+								</a>
+								<a href="#" class="text-gray-800">
+									<svg
+										class="w-6 h-6"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+									>
+										<path
+											d="M20.447 3.006H3.554C2.696 3.006 2 3.702 2 4.56v14.88c0 .858.696 1.554 1.554 1.554h16.893c.858 0 1.553-.696 1.553-1.554V4.56c0-.858-.696-1.554-1.553-1.554zM8.3 18.117H5.445v-8.7H8.3v8.7zM6.87 8.6a1.541 1.541 0 1 1 0-3.082 1.541 1.541 0 0 1 0 3.082zm11.248 9.517h-2.855v-4.267c0-1.018-.022-2.329-1.42-2.329-1.422 0-1.64 1.112-1.64 2.253v4.342h-2.855v-8.7h2.741v1.188h.04c.382-.722 1.318-1.48 2.712-1.48 2.898 0 3.434 1.906 3.434 4.382v4.61z"
+										/>
+									</svg>
+								</a>
+								<a href="#" class="text-gray-800">
+									<svg
+										class="w-6 h-6"
+										fill="currentColor"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+									>
+										<path
+											d="M23.498 6.186a2.973 2.973 0 0 0-2.093-2.093C19.635 3.68 12 3.68 12 3.68s-7.636 0-9.405.413a2.973 2.973 0 0 0-2.093 2.093C.088 7.955.088 12 .088 12s0 4.046.414 5.814a2.973 2.973 0 0 0 2.093 2.093c1.768.414 9.405.414 9.405.414s7.636 0 9.405-.414a2.973 2.973 0 0 0 2.093-2.093c.414-1.768.414-5.814.414-5.814s0-4.046-.414-5.814zM9.545 15.568V8.431l6.363 3.568-6.363 3.569z"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Contact Form -->
+					<div>
+						<form action="#" method="POST" class="space-y-4">
+							<div>
+								<label
+									for="name"
+									class="block text-sm font-medium text-gray-700"
+									>Name <span class="text-red-500">*</span></label
+								>
+								<input
+									type="text"
+									name="name"
+									id="name"
+									class="block w-full mt-1 border border-gray-300 rounded-md shadow-sm focus:border-orange-500 focus:ring-orange-500 sm:text-sm"
+									required
+								/>
+							</div>
+							<div>
+								<label
+									for="email"
+									class="block text-sm font-medium text-gray-700"
+									>Email <span class="text-red-500">*</span></label
+								>
+								<input
+									type="email"
+									name="email"
+									id="email"
+									class="block w-full mt-1 border border-gray-300 rounded-md shadow-sm focus:border-orange-500 focus:ring-orange-500 sm:text-sm"
+									required
+								/>
+							</div>
+							<div>
+								<label
+									for="message"
+									class="block text-sm font-medium text-gray-700"
+									>Message</label
+								>
+								<textarea
+									name="message"
+									id="message"
+									rows="4"
+									class="block w-full mt-1 border border-gray-300 rounded-md shadow-sm focus:border-orange-500 focus:ring-orange-500 sm:text-sm"
+								></textarea>
+							</div>
+							<div>
+								<button
+									type="submit"
+									class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-orange-500 border border-transparent rounded-md shadow-sm hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+								>
+									Submit
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<div
+				class="relative w-full p-8 min-h-[90vh] flex justify-center items-center bg-center bg-no-repeat bg-cover"
+				style="
+					background-image: url('https://car-wash.websitedemos.top/wp-content/uploads/2023/09/footer-cta.jpg');
+				"
+			>
+				<div class="absolute inset-0 bg-black opacity-70"></div>
+				<div class="relative z-10 max-w-2xl text-center text-white">
+					<p class="mb-4 text-3xl font-bold md:text-4xl">
+						We Will Write A Convincing Call To Action To Engage Your Audience
+						Here
+					</p>
+					<p class="mb-6 text-base md:text-lg">
+						We Will Write A Convincing Call To Action To Engage Your Audience
+						Here
+					</p>
+					<a
+						href="#"
+						class="inline-block px-6 py-3 font-bold text-white bg-orange-500 rounded-lg hover:bg-orange-600"
+						>CALL TO ACTION</a
+					>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer class="flex items-center justify-center p-6 text-center">
+			<p>Copyright © 2024 Car Garage</p>
+		</footer>
+
+		<!-- JS -->
+		<script src="/script.js"></script>
+	</body>
+</html>
